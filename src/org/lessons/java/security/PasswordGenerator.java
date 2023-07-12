@@ -8,6 +8,7 @@ public class PasswordGenerator {
     int day;
     int month;
     int year;
+    int somma;
   char slash;
   String password;
 
@@ -16,11 +17,12 @@ public class PasswordGenerator {
     name = "Pinco";
     lastName = "Pallo";
     favouriteColor = "magenta";
-    slash = '/';
+    slash = '-';
     day = 12;
     month = 5;
     year = 1994;
-    password = name + lastName + favouriteColor + day + slash + month + slash + year;
+    somma = day + month + year;
+    password = name + slash + lastName + slash + favouriteColor + slash + somma;
 
 System.out.println(password);
 

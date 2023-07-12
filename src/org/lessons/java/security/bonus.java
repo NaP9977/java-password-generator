@@ -11,6 +11,7 @@ public class bonus {
         int day;
         int month;
         int year;
+        int somma;
         char slash;
         String password;
 
@@ -20,8 +21,9 @@ public class bonus {
         day = input.nextInt();
         month = input.nextInt();
         year = input.nextInt();
-        slash = '/';
-        password = name + lastName + favouriteColor + day + slash + month + slash + year;
+        somma = day + month + year;
+        slash = '-';
+        password = name + slash + lastName + slash + favouriteColor + slash + somma;
 
         System.out.println(password);
 
